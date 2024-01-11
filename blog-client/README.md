@@ -32,4 +32,5 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 ### `npm run eject`
 
-
+### `npm i notistack rc-drawer react-icons react-quill react-router-dom react-js-pagination`
+### `npm i @types/react-js-pagination --save-dev`
