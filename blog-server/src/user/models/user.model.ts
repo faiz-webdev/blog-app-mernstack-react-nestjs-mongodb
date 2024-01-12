@@ -5,19 +5,18 @@ import { UserRoles } from 'src/utility/user-roles';
 export type UserDocument = HydratedDocument<User>;
 
 @Schema({
-    timestamps:true,
-    id:false,
-    toJSON:{
-        virtuals:true,
-        transform:function (doc:any,ret:any){
-            delete ret.__v;
-            return ret;
-        }
-    }
+  timestamps: true,
+  id: false,
+  toJSON: {
+    virtuals: true,
+    transform: function (doc: any, ret: any) {
+      delete ret.__v;
+      return ret;
+    },
+  },
 })
 export class User {
-
-    _id?:mongoose.Types.ObjectId;
+  _id?: mongoose.Types.ObjectId;
 
   @Prop()
   name: string;
@@ -25,14 +24,14 @@ export class User {
   @Prop()
   email: string;
 
-  @Prop({select:false})
+  @Prop({ select: false })
   password: string;
 
   @Prop()
-  avatar:string;
+  avatar: string;
 
-  @Prop({type:[String],enum:[UserRoles],default:UserRoles.Reader})
-  roles:string[];
+  @Prop({ type: [String], enum: [UserRoles], default: UserRoles.Reader })
+  roles: string[];
 }
 
 export const UserSchema = SchemaFactory.createForClass(User);
