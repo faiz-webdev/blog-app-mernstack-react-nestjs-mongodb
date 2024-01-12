@@ -7,6 +7,7 @@ import { PostModule } from './post/post.module';
 import { UserModule } from './user/user.module';
 import { CurrentUserMiddleware } from './utility/middlewares/current-user.middleware';
 import { GlobalConfigModule } from 'db/config.module';
+
 config();
 
 @Module({

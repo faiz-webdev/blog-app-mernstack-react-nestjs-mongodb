@@ -1,9 +1,8 @@
-import React from 'react'
 
 function Footer() {
-  return (
-    <div>Footer</div>
-  )
+    return (
+        <footer>&copy;Nestjs and Reactjs Blog</footer>
+    )
 }
 
 export default Footer

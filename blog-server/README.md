@@ -18,4 +18,7 @@ _fill each filed with your info respectively_
 
 ## Author
 **LinkedIn** Click [Here](https://www.linkedin.com/in/bilchalan/)
+
+## Config package
+`npm install --save @nestjs/config`
                                                                                        
