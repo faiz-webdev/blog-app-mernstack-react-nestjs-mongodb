@@ -9,6 +9,9 @@ function Header() {
                     <img src={logo} width={50} alt="Blog" />
                 </NavLink>
             </div>
+            <div className='menu'>
+                menu
+            </div>
         </header>
     )
 }

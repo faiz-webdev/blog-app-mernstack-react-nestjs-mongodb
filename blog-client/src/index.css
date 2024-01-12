@@ -57,3 +57,12 @@ main {
   width: 25%;
   flex-direction: column;
 }
+
+.auth {
+  margin: 0 auto;
+}
+
+.auth form input {
+  display: block;
+  margin: 10px 0;
+}
