@@ -1,9 +1,14 @@
-import React from 'react'
+import { NavLink } from 'react-router-dom';
+import logo from '../images/logo.png';
 
 function Header() {
     return (
         <header>
-            Header
+            <div className='logo'>
+                <NavLink to="/">
+                    <img src={logo} width={50} alt="Blog" />
+                </NavLink>
+            </div>
         </header>
     )
 }
