@@ -57,8 +57,8 @@ export class UserService {
         _id: user._id,
         email: user.email,
       },
-      process.env.TOKEN_SECRET,
-      { expiresIn: process.env.TOKEN_EXPIRE_TIME },
+      process.env.TOKEN_SECRET || 'dsdsdsd',
+      { expiresIn: process.env.TOKEN_EXPIRE_TIME || '120h' },
     );
   }
 

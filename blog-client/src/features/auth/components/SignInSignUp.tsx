@@ -15,12 +15,9 @@ function SignInSignUp({ onSignIn, onSignUp }: AuthPageProps) {
     const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
         if (isSignIn) {
-            // onSignIn(email, password);
-            console.log(email, password)
-            setIsSignIn(false);
+            onSignIn(email, password);
         } else {
-            // onSignUp(name, email, password, avatar);
-            console.log(name, email, password, avatar)
+            onSignUp(name, email, password, avatar);
         }
     };
 
